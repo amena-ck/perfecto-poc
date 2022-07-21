@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">PerfectoSelenium</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">739</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">PerfectoSelenium &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.perfecto.sampleproject.PerfectoSelenium</td><td><a href="#m0">afterMethod</a></td><td rowspan="1">1655845518886</td><td rowspan="1">0</td></tr><tr><th colspan="4">PerfectoSelenium &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.perfecto.sampleproject.PerfectoSelenium</td><td><a href="#m1">webTest</a></td><td rowspan="1">1655845518155</td><td rowspan="1">727</td></tr></tbody></table><h2>PerfectoSelenium</h2><h3 id="m0">com.perfecto.sampleproject.PerfectoSelenium#afterMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=webTest status=FAILURE method=PerfectoSelenium.webTest()[pri:0, instance:com.perfecto.sampleproject.PerfectoSelenium@6950e31] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.perfecto.reportium.client.ReportiumClient.testStop(com.perfecto.reportium.test.result.TestResult)&quot; because &quot;this.reportiumClient&quot; is null
+	at com.perfecto.sampleproject.PerfectoSelenium.afterMethod(PerfectoSelenium.java:132)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.perfecto.sampleproject.PerfectoSelenium#webTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;&lt;title&gt;405 Method Not Allowed&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;405 Method Not Allowed&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Code: MethodNotAllowed&lt;/li&gt;
+&lt;li&gt;Message: The specified method is not allowed against this resource.&lt;/li&gt;
+&lt;li&gt;Method: POST&lt;/li&gt;
+&lt;li&gt;ResourceType: OBJECT&lt;/li&gt;
+&lt;li&gt;RequestId: FTM74N9QE28AZN8W&lt;/li&gt;
+&lt;li&gt;HostId: nuH8C8fEVqSj0g6PYKSf1hDjJImt5cmj0leOW9aIidID5Y4rRmtdxqFPOM9c/LFtEmQdDs9Y7tk=&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr/&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.perfecto.sampleproject.PerfectoSelenium.webTest(PerfectoSelenium.java:101)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Amenas-MacBook-Pro.local&apos;, ip: &apos;2600:8807:8007:8300:f1c3:23e1:e2d9:2bf0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.1&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+	... 27 more
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

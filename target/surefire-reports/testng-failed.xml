@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test name="PerfectoSelenium">
+    <classes>
+      <class name="com.perfecto.sampleproject.PerfectoSelenium"/>
+    </classes>
+  </test> <!-- PerfectoSelenium -->
+  <test parallel="tests" name="PerfectoSelenium(failed)">
+    <classes>
+      <class name="com.perfecto.sampleproject.PerfectoSelenium">
+        <methods>
+          <include name="webTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.perfecto.sampleproject.PerfectoSelenium -->
+    </classes>
+  </test> <!-- PerfectoSelenium(failed) -->
+</suite> <!-- Failed suite [Suite] -->

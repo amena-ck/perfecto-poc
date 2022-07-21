@@ -1,0 +1,16 @@
+com/perfecto/virtualdevices/PerfectoSimulatorAppium.class
+com/perfecto/sampleproject/PerfectoSelenium.class
+com/perfecto/advanced/Perfecto_OTP_Sample.class
+com/perfecto/sampleproject/PerfectoAppium.class
+com/perfecto/sampleproject/PerfectoAppiumCustomerAppiOS.class
+com/perfecto/sampleproject/PerfectoLabUtils.class
+com/perfecto/advanced/Template.class
+com/perfecto/advanced/Audio_To_Text.class
+com/perfecto/sampleproject/PerfectoAppiumCustomerApp.class
+com/perfecto/virtualdevices/LocalSimulatorAppium.class
+com/perfecto/sampleproject/LocalSelenium.class
+com/perfecto/virtualdevices/PerfectoEmulatorAppium.class
+com/perfecto/sampleproject/LocalAppium.class
+com/perfecto/sampleproject/PerfectoAppiumiOS.class
+com/perfecto/virtualdevices/LocalEmulatorAppium.class
+com/perfecto/advanced/PerfectoAppiumiOSTurnOffWifi.class

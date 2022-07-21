@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.096 sec <<< FAILURE! - in TestSuite
+webTest(com.perfecto.sampleproject.PerfectoSelenium)  Time elapsed: 0.73 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Unable to parse remote response: <html>
+<head><title>405 Method Not Allowed</title></head>
+<body>
+<h1>405 Method Not Allowed</h1>
+<ul>
+<li>Code: MethodNotAllowed</li>
+<li>Message: The specified method is not allowed against this resource.</li>
+<li>Method: POST</li>
+<li>ResourceType: OBJECT</li>
+<li>RequestId: FTM74N9QE28AZN8W</li>
+<li>HostId: nuH8C8fEVqSj0g6PYKSf1hDjJImt5cmj0leOW9aIidID5Y4rRmtdxqFPOM9c/LFtEmQdDs9Y7tk=</li>
+</ul>
+<hr/>
+</body>
+</html>
+
+	at com.perfecto.sampleproject.PerfectoSelenium.webTest(PerfectoSelenium.java:101)
+Caused by: org.openqa.selenium.json.JsonException: 
+Unable to determine type from: <. Last 1 characters read: <
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Amenas-MacBook-Pro.local', ip: '2600:8807:8007:8300:f1c3:23e1:e2d9:2bf0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.1', java.version: '16.0.1'
+Driver info: driver.version: RemoteWebDriver
+	at com.perfecto.sampleproject.PerfectoSelenium.webTest(PerfectoSelenium.java:101)
+
+afterMethod(com.perfecto.sampleproject.PerfectoSelenium)  Time elapsed: 0.733 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.perfecto.reportium.client.ReportiumClient.testStop(com.perfecto.reportium.test.result.TestResult)" because "this.reportiumClient" is null
+	at com.perfecto.sampleproject.PerfectoSelenium.afterMethod(PerfectoSelenium.java:132)
+
